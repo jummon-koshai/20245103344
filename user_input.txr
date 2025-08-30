@@ -1,0 +1,85 @@
+🔁 Merge Sort
+int main()
+{
+    int n;
+    cout << "Enter the number of elements: ";
+    cin >> n;
+    int A[n];
+    cout << "Enter the elements: ";
+    for(int i = 0; i < n; i++)
+    {
+        cin >> A[i];
+    }
+    mergeSort(A, 0, n - 1);
+    cout << "Sorted array: ";
+    printArray(A, n);
+    return 0;
+}
+🗓️ Activity Selection
+int main()
+{
+    int n;
+    cout << "Enter the number of activities: ";
+    cin >> n;
+    Activity A[n];
+    cout << "Enter the activities: ";
+    for(int i = 0; i < n; i++)
+    {
+        cin >> A[i].start >> A[i].finish;
+    }
+    printMaxActivities(A, n);
+}
+🧮 Fractional Knapsack
+int main()
+{
+    int N;
+    cout << "Enter knapsack capacity: ";
+    cin >> N;
+    int Size;
+    cout << "Enter number of items: ";
+    cin >> Size;
+    Item A[Size];
+    cout << "Enter value and weight for each item: ";
+    for(int i = 0; i < Size; i++)
+    {
+        cin >> A[i].value >> A[i].weight;
+    }
+    cout << "Max Profit earned: " << fractionalKnapsack(A, N, Size) << endl;
+}
+✂️ Rod Cutting
+int main()
+{
+    int N;
+    cout << "Enter total rod length: ";
+    cin >> N;
+    int n;
+    cout << "Enter number of available piece types: ";
+    cin >> n;
+    RodPiece pieces[n];
+    cout << "Enter length and profit for each piece: ";
+    for(int i = 0; i < n; i++)
+    {
+        cout << "Piece " << i+1 << ": ";
+        cin >> pieces[i].length >> pieces[i].profit;
+    }
+    rodcutting(pieces, n, N);
+    return 0;
+}
+🧳 0/1 Knapsack
+int main()
+{
+    int n;
+    cout << "Enter number of items: ";
+    cin >> n;
+    Item arr[n];
+    cout << "Enter weight and value of each item: ";
+    for(int i = 0; i < n; i++)
+    {
+        cin >> arr[i].weight >> arr[i].value;
+    }
+    int W;
+    cout << "Enter knapsack capacity: ";
+    cin >> W;
+    Knapsack(arr, n, W);
+    return 0;
+}
