@@ -1,10 +1,8 @@
 #include <iostream>
 #include <algorithm>
 using namespace std;
-struct RodPiece
-{
-int length; int profit;
-};
+
+struct RodPiece{int length, profit;};
 void rodcutting(RodPiece arr[], int n, int N)
 {
 int dp[n+1][N+1];
